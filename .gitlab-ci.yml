@@ -6,7 +6,9 @@ stages:
 variables:
   MIX_ENV: test
 
-image: elixir:1.14
+image:
+  name: elixir:latest
+  pull_policy: always
 
 cache:
   key: ${CI_COMMIT_REF_SLUG}
@@ -26,8 +28,6 @@ format_check:
   only:
     - merge_requests
     - master
-  tags:
-    - elixir
 
 lint:
   stage: lint
@@ -36,8 +36,6 @@ lint:
   only:
     - merge_requests
     - master
-  tags:
-    - elixir
 
 test:
   stage: test
@@ -46,5 +44,3 @@ test:
   only:
     - merge_requests
     - master
-  tags:
-    - elixir
