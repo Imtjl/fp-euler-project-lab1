@@ -1,7 +1,7 @@
 defmodule Euler21Test do
   use ExUnit.Case
 
-  @expected 31626
+  @expected 31_626
 
   test "Euler21Recursion" do
     assert Euler21Recursion.sum_amicable_numbers(10_000) == @expected
