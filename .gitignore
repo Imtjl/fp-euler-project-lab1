@@ -24,3 +24,15 @@ euler-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+# Ignore LaTeX
+*.aux
+*.fls
+*.fdb_latexmk
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# Ignore binary files
+*_out
