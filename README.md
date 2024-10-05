@@ -1,21 +1,22 @@
-# Euler
+# Functional Programming Lab 1
 
-**TODO: Add description**
+`Warm welcome!`
 
-## Installation
+This project showcases the exercises and solutions implemented as part of the
+first lab assignment in functional programming.
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `euler` to your list of dependencies in `mix.exs`:
+## Contents
 
-```elixir
-def deps do
-  [
-    {:euler, "~> 0.1.0"}
-  ]
-end
-```
+- **Lab Report**: [Latex report made with heart to it](./common/main.pdf)
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/euler>.
+## Overview
 
+This lab focuses on solving Euler project tasks using functional paradigm.
+Solutions are presented to you in Elixir. The exercises emphasize concepts like
+recursion, tail-recursion, higher-order functions, and working with collections.
+
+### Key Topics Covered:
+
+- Recursive and tail-recursive function implementations
+- Handling infinite sequences and lazy collections
+- Modular arithmetic and sequence mapping techniques
