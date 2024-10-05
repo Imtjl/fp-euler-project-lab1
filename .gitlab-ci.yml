@@ -25,7 +25,7 @@ format_check:
     - mix format --check-formatted
   only:
     - merge_requests
-    - main
+    - master
   tags:
     - elixir
 
@@ -35,7 +35,7 @@ lint:
     - mix credo --strict
   only:
     - merge_requests
-    - main
+    - master
   tags:
     - elixir
 
@@ -45,6 +45,6 @@ test:
     - mix test
   only:
     - merge_requests
-    - main
+    - master
   tags:
     - elixir
