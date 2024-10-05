@@ -1,0 +1,50 @@
+stages:
+  - format
+  - lint
+  - test
+
+variables:
+  MIX_ENV: test
+
+image: elixir:1.14
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - _build/
+    - deps/
+
+before_script:
+  - mix local.hex --force
+  - mix local.rebar --force
+  - mix deps.get
+
+format_check:
+  stage: format
+  script:
+    - mix format --check-formatted
+  only:
+    - merge_requests
+    - main
+  tags:
+    - elixir
+
+lint:
+  stage: lint
+  script:
+    - mix credo --strict
+  only:
+    - merge_requests
+    - main
+  tags:
+    - elixir
+
+test:
+  stage: test
+  script:
+    - mix test
+  only:
+    - merge_requests
+    - main
+  tags:
+    - elixir
