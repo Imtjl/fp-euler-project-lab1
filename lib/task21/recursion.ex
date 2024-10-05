@@ -1,4 +1,7 @@
 defmodule Euler21Recursion do
+  @moduledoc """
+  Module handling recursive implementations for Euler problem 21.
+  """
   def sum_amicable_numbers(limit) do
     do_sum(2, limit, [])
   end

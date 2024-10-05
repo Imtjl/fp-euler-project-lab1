@@ -1,4 +1,7 @@
 defmodule Euler9Recursion do
+  @moduledoc """
+  Module handling recursive implementations for Euler problem 9.
+  """
   def find_triplet(sum) do
     do_find_triplet(1, 2, sum)
   end

@@ -1,4 +1,7 @@
 defmodule Euler9Modular do
+  @moduledoc """
+  Module handling modular implementations for Euler problem 9.
+  """
   def find_triplet(sum) do
     1..(sum - 2)
     |> Enum.flat_map(fn a ->
