@@ -1,0 +1,30 @@
+% listing for programming code blocks
+\definecolor{commentgreen}{RGB}{2,112,10}
+\definecolor{eminence}{RGB}{108,48,130}
+\definecolor{weborange}{RGB}{255,165,0}
+\definecolor{frenchplum}{RGB}{129,20,83}
+
+
+\lstdefinelanguage{elixir}{
+	morekeywords={case,catch,def,do,else,false,%
+			use,alias,receive,timeout,defmacro,defp,%
+			for,if,import,defmodule,defprotocol,%
+			nil,defmacrop,defoverridable,defimpl,%
+			super,fn,raise,true,try,end,with,%
+			unless},
+	otherkeywords={<-,->, |>, \%\{, \}, \{, \, (, )},
+	sensitive=true,
+	morecomment=[l]{\#},
+	morecomment=[n]{/*}{*/},
+	morecomment=[s][\color{purple}]{:}{\ },
+	morestring=[s][\color{orange}]"",
+	commentstyle=\color{commentgreen},
+	keywordstyle=\color{eminence},
+	stringstyle=\color{red},
+	basicstyle=\ttfamily,
+	breaklines,
+	showstringspaces=false,
+	frame=tb
+}
+
+\lstset{numbers=left,xleftmargin=2em,frame=single,framexleftmargin=0em,numberstyle=\footnotesize\ttfamily}
