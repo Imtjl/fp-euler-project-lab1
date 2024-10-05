@@ -27,12 +27,16 @@ defmodule Euler21ListComp do
   end
 
   defp sum_of_divisors(n) do
-    for(
-      i <- 1..div(n, 2),
-      rem(n, i) == 0,
-      do: i
-    )
-    |> Enum.sum()
+    if n > 1 do
+      for(
+        i <- 1..div(n, 2),
+        rem(n, i) == 0,
+        do: i
+      )
+      |> Enum.sum()
+    else
+      0
+    end
   end
 
   defp limit, do: 10_000

@@ -23,8 +23,12 @@ defmodule Euler21Map do
   end
 
   defp sum_of_divisors(n) do
-    1..(div(n, 2))
-    |> Enum.filter(&(rem(n, &1) == 0))
-    |> Enum.sum()
+    if n > 1 do
+      1..div(n, 2)
+      |> Enum.filter(&(rem(n, &1) == 0))
+      |> Enum.sum()
+    else
+      0
+    end
   end
 end
