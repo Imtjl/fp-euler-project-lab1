@@ -1,5 +1,31 @@
 # Лабораторная работа №1 (Проект Эйлера)
 
+<p align="center">
+  <a href="https://github.com/Imtjl/fp-euler-project-lab1">
+    <picture>
+      <img src="resources/logo.png" height="200">
+    </picture>
+    <h1 align="center">
+        Лабораторная работа №1 (Проект Эйлера)
+    </h1>   
+  </a>
+</p>
+
+<p align="center">  
+  <a aria-label="Elixir Version" href="https://elixir-lang.org/">
+    <img alt="Elixir Version" src="https://img.shields.io/badge/Elixir-1.15.7-purple?style=for-the-badge&labelColor=000000">
+  </a>
+  <a aria-label="Erlang/OTP Version" href="https://www.erlang.org/">
+    <img alt="Erlang/OTP Version" src="https://img.shields.io/badge/Erlang%2FOTP-26.0-red?style=for-the-badge&labelColor=000000">
+  </a>
+  <a aria-label="Elixir CI" href="https://github.com/Imtjl/fp-euler-project-lab1/actions">
+    <img alt="Elixir CI" src="https://github.com/Imtjl/fp-euler-project-lab1/actions/workflows/ci.yml/badge.svg">
+  </a>
+  <a aria-label="Coverage Status" href="https://coveralls.io/github/Imtjl/fp-euler-project-lab1?branch=master">
+    <img alt="Coverage Status" src="https://coveralls.io/repos/github/Imtjl/fp-euler-project-lab1/badge.svg?branch=master">
+  </a>
+</p>
+  
 ---
 
 - Студент: `Дворкин Борис Александрович`

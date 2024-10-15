@@ -36,6 +36,14 @@ jobs:
         run: |
           mix credo --strict
 
+      - name: Test with Coverage
+        run: |
+          mix coveralls --umbrella
+
+      - name: Post Coverage to Coveralls
+        run: |
+          mix coveralls.github
+
       - name: Test
         run: |
           mix test

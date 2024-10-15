@@ -8,7 +8,15 @@ defmodule Euler.MixProject do
       elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      elixirc_paths: elixirc_paths(Mix.env())
+      elixirc_paths: elixirc_paths(Mix.env()),
+      test_coverage: [tool: ExCoveralls],
+      preferred_cli_env: [
+        coveralls: :test,
+        "coveralls.html": :test,
+        "coveralls.json": :test,
+        "coveralls.detail": :test,
+        "coveralls.post": :test
+      ]
     ]
   end
 
@@ -23,7 +31,8 @@ defmodule Euler.MixProject do
   defp deps do
     [
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
-      {:propcheck, "~> 1.4.1", only: [:test]}
+      {:propcheck, "~> 1.4.1", only: [:test]},
+      {:excoveralls, "~> 0.14", only: :test}
     ]
   end
 
