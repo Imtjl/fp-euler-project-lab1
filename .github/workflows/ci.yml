@@ -41,6 +41,8 @@ jobs:
           mix coveralls --umbrella
 
       - name: Post Coverage to Coveralls
+        env: 
+          COVERALLS_REPO_TOKEN: 'u5MzoB0kTPQClc8u8bnFpB1xzjZ3UICdl5hV'
         run: |
           mix coveralls.github
 

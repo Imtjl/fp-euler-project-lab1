@@ -15,7 +15,8 @@ defmodule Euler.MixProject do
         "coveralls.html": :test,
         "coveralls.json": :test,
         "coveralls.detail": :test,
-        "coveralls.post": :test
+        "coveralls.post": :test,
+        "coveralls.github": :test
       ]
     ]
   end
