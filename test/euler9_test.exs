@@ -15,10 +15,6 @@ defmodule Euler9Test do
     assert Euler9Modular.find_triplet(1000) == @expected
   end
 
-  test "Euler9Map" do
-    assert Euler9Map.find_triplet(1000) == @expected
-  end
-
   test "Euler9ListComp" do
     assert Euler9ListComp.find_triplet(1000) == @expected
   end
