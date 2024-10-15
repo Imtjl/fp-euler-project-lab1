@@ -17,10 +17,7 @@
     <img alt="Erlang/OTP Version" src="https://img.shields.io/badge/Erlang%2FOTP-26.0-red?style=for-the-badge&labelColor=000000">
   </a>
   <a aria-label="Elixir CI" href="https://github.com/Imtjl/fp-euler-project-lab1/actions">
-    <img alt="Elixir CI" src="https://github.com/Imtjl/fp-euler-project-lab1/actions/workflows/ci.yml/badge.svg">
-  </a>
-  <a aria-label="Coverage Status" href="https://coveralls.io/github/Imtjl/fp-euler-project-lab1?branch=master">
-    <img alt="Coverage Status" src="https://coveralls.io/repos/github/Imtjl/fp-euler-project-lab1/badge.svg?branch=master">
+    <img alt="Elixir CI" src="https://img.shields.io/github/actions/workflow/status/Imtjl/fp-euler-project-lab1/ci.yml?branch=master&style=for-the-badge&labelColor=000000&color=brightgreen">
   </a>
 </p>
   
@@ -32,6 +29,30 @@
 - Функциональный язык программирования: `Elixir`
 
 ---
+
+## Test coverage
+
+```
+...........
+Finished in 26.6 seconds (0.00s async, 26.6s sync)
+11 tests, 0 failures
+Randomized with seed 71505
+----------------
+COV    FILE                                        LINES RELEVANT   MISSED
+100.0% //lib/task21/inf_lists_lazy_collections.       38        9        0
+100.0% //lib/task21/modular.ex                        37        7        0
+100.0% //lib/task21/recursion.ex                      32       11        0
+100.0% //lib/task21/sequence.ex                       34        7        0
+100.0% //lib/task21/special_loops.ex                  43       10        0
+100.0% //lib/task21/tail_recursion.ex                 32       11        0
+100.0% //lib/task9/inf_lists_lazy_collections.e       20       10        0
+100.0% //lib/task9/modular.ex                         33        8        0
+ 88.8% //lib/task9/recursion.ex                       25        9        1
+100.0% //lib/task9/special_loops.ex                   25        3        0
+ 87.5% //lib/task9/tail_recursion.ex                  24        8        1
+[TOTAL]  97.8%
+----------------
+```
 
 ## Проблема №9
 
