@@ -1,5 +1,3 @@
-# Лабораторная работа №1 (Проект Эйлера)
-
 <p align="center">
   <a href="https://github.com/Imtjl/fp-euler-project-lab1">
     <picture>
