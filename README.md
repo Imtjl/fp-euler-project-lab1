@@ -19,9 +19,25 @@
   <a aria-label="Elixir CI" href="https://github.com/Imtjl/fp-euler-project-lab1/actions">
     <img alt="Elixir CI" src="https://img.shields.io/github/actions/workflow/status/Imtjl/fp-euler-project-lab1/ci.yml?branch=master&style=for-the-badge&labelColor=000000&color=brightgreen">
   </a>
+  <a aria-label="Repo size" href="https://github.com/Imtjl/fp-euler-project-lab1">
+    <img alt="" src="https://img.shields.io/github/repo-size/Imtjl/fp-euler-project-lab1?style=for-the-badge&logo=github&labelColor=000000&color=008080">
+  </a>
 </p>
   
+<details open>
+   <summary><b>Table of Contents</b></summary>
+
+- [Title](#title)
+- [Test coverage](#tc)
+- [Task 9](#task9)
+- [Task 21](#task21)
+- [Conclusion](#end)
+
+</details>
+
 ---
+
+<a id="title"></a>
 
 - Студент: `Дворкин Борис Александрович`
 - Группа: `P3331`
@@ -31,6 +47,8 @@
 ---
 
 ## Test coverage
+
+<a id="tc"></a>
 
 ```
 ...........
@@ -54,6 +72,7 @@ COV    FILE                                        LINES RELEVANT   MISSED
 ----------------
 ```
 
+<a id="task9"></a>
 ## Проблема №9
 
 ---
@@ -290,6 +309,7 @@ print(f"Pythagorean triplet: a = {a}. b = {b}, c = {c}")
 print(f"Product abc = {a * b * c}")
 ```
 
+<a id="task21"></a>
 ## Проблема №21
 
 ---
@@ -606,6 +626,8 @@ def find_amicable_nums(limit):
 limit = 10_000
 print(f"Amicle numbers sum below {limit} is {find_amicable_nums(limit)}")
 ```
+
+<a id="end"></a>
 
 ## Вывод
 
