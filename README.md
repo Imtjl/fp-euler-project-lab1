@@ -10,14 +10,14 @@
 </p>
 
 <p align="center">  
-  <a aria-label="Elixir Version" href="https://elixir-lang.org/">
-    <img alt="Elixir Version" src="https://img.shields.io/badge/Elixir-1.15.7-purple?style=for-the-badge&labelColor=000000">
-  </a>
+ <a aria-label="Elixir Version" href="https://elixir-lang.org/">
+  <img alt="Elixir Version" src="https://img.shields.io/badge/Elixir-1.15.7-purple?style=for-the-badge&labelColor=000000&logo=elixir&logoColor=white">
+</a>
   <a aria-label="Erlang/OTP Version" href="https://www.erlang.org/">
     <img alt="Erlang/OTP Version" src="https://img.shields.io/badge/Erlang%2FOTP-26.0-red?style=for-the-badge&labelColor=000000">
   </a>
   <a aria-label="Elixir CI" href="https://github.com/Imtjl/fp-euler-project-lab1/actions">
-    <img alt="Elixir CI" src="https://img.shields.io/github/actions/workflow/status/Imtjl/fp-euler-project-lab1/ci.yml?branch=master&style=for-the-badge&labelColor=000000&color=brightgreen">
+    <img alt="Elixir CI" src="https://img.shields.io/github/actions/workflow/status/Imtjl/fp-euler-project-lab1/ci.yml?branch=master&style=for-the-badge&logo=github-actions&labelColor=000000&color=brightgreen">
   </a>
   <a aria-label="Repo size" href="https://github.com/Imtjl/fp-euler-project-lab1">
     <img alt="" src="https://img.shields.io/github/repo-size/Imtjl/fp-euler-project-lab1?style=for-the-badge&logo=github&labelColor=000000&color=008080">
@@ -73,6 +73,7 @@ COV    FILE                                        LINES RELEVANT   MISSED
 ```
 
 <a id="task9"></a>
+
 ## Проблема №9
 
 ---
@@ -310,6 +311,7 @@ print(f"Product abc = {a * b * c}")
 ```
 
 <a id="task21"></a>
+
 ## Проблема №21
 
 ---
@@ -655,5 +657,10 @@ Elixir.
 участки, виртуальная машина работает гораздо лучше, чем интерпретаторы Python
 или даже Java.
 
-Хотел сделать code coverage, посидеть попрофилировать решения, но завяз на 100
-часов за электротехникой, скажите студофису чтоб убрали 11 предметов блин.
+Хотел автоматизировать test coverage, посидеть попрофилировать решения, но завяз
+на 100 часов за электротехникой, скажите студофису чтоб убрали 11 предметов
+блин.
+
+Также если хотите порофлить, в `./common/` лежит демка отчёта в латехе, но чёт я
+подумал что маркдаун лучше проявит себя в долгосрочной перспективе в репозитории
+гитхаба. Это не электротехника :)
