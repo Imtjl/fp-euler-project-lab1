@@ -1,22 +1,51 @@
-# Functional Programming Lab 1
+# Лабораторная работа №1 (Проект Эйлера)
 
-`Warm welcome!`
+---
 
-This project showcases the exercises and solutions implemented as part of the
-first lab assignment in functional programming.
+- Студент: `Дворкин Борис Александрович`
+- Группа: `P3331`
+- ИСУ: `368090`
+- Функциональный язык программирования: `Elixir`
 
-## Contents
+---
 
-- **Lab Report**: [Latex report made with heart to it](./common/main.pdf)
+## Проблема №9
 
-## Overview
+---
 
-This lab focuses on solving Euler project tasks using functional paradigm.
-Solutions are presented to you in Elixir. The exercises emphasize concepts like
-recursion, tail-recursion, higher-order functions, and working with collections.
+- Название: `Special Pythagorean Triplet`
+- Описание:  
+   A Pythagorean triplet is a set of three natural numbers, $a < b < c$, for which  
+  $$a^2 + b^2 = c^2$$  
+  For example, $3^2 + 4^2 = 9 + 16 = 25 = 5^2$.  
+  There exists exactly one Pythagorean triplet for which $a + b + c = 1000$.
+- Задание: `Find the product abc.`
 
-### Key Topics Covered:
+---
 
-- Recursive and tail-recursive function implementations
-- Handling infinite sequences and lazy collections
-- Modular arithmetic and sequence mapping techniques
+### Основная идея решения
+
+Конечно, задачу можно банально решить полным перебором, как я и сделал на
+императивном языке `Python`. Но в функциональных языках принято пользоваться
+рекурсией, фильтрацией, генерацией и другими концепциями, поэтому для различных
+ситуаций пришлось придумать другие решения.
+
+Для рекурсии идея состоит в следующем:
+
+Установим $a = 1$ и $b = 2$, как обычно вычислим $c = \text{sum} - a - b$ и
+проверим, удовлетворяют ли $a$, $b$, $c$ условию Пифагоровой тройки.
+
+Теперь заметим, что $a < b < c$ (по условию), а значит, можно записать условия
+перебора для каждой переменной, а потом просто рекурсивно вызывать функцию, либо
+увеличивая $b$, либо увеличивая $a$, при этом не забывая проверять, что
+$a < b < c$.
+
+А именно:
+
+- если $b < c$, то можно безопасно увеличить $b$ на 1 и вызвать функцию для
+  этого значения.
+  - Так как $c = \text{sum} - a - b$, то получаем условие
+    $b < \text{sum} - a - b$.
+- Иначе, это значит, что мы перебрали все возможные значения $b$ для данного
+  $a$, поэтому "сбрасываем" значение $b$, делая его на 1 больше, чем $a$, так
+  как $a < b < c$.
